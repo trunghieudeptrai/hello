@@ -1,0 +1,71 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: url("../../../Downloads/juli-kosolapova-dWm94DekLBg-unsplash.jpg");
+	background-size: cover;
+	
+}
+#ngu{
+	width: 100vw;
+	padding: 0 500px
+}
+h1{
+	font-size: 36px;
+	color: #FFC430;
+	padding: 50px 0 0
+}
+#ngu>p{
+	color: darkgrey;
+	padding: 30px 0
+}
+.n{
+	width: 100vw;
+	display: flex;
+	position: relative;
+/*	top:0;*/
+	align-items: center;
+	margin: 150px auto
+		
+}
+.m{
+	width: 400px;
+	height: 300px;
+	background: rgba(152,0,0,0.65);
+	position: absolute;
+	align-items: center;
+	z-index: 30;
+	padding: 30px 30px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: -5px 5px 10px 5px rgba(0,0,0,0.5);
+}
+.m>span{
+	font-size: 70px;
+	text-align: center;
+	color: white;
+	display: flow-root;
+	padding: 0 0 30px;
+	
+}
+.n>img{
+	height: 600px;
+	position: relative;
+	left: 200px;
+}
+h2{
+	font-size: 36px;
+	color: rgba(222,184,135,1.00)
+}
+h3{
+	font-size: 15px;
+	color: rgba(197,197,197,1.00);
+	padding: 0 0 5px 0
+}
+.m>p{
+	font-size: 18px;
+	color: white
+}
