@@ -1,71 +1,115 @@
 /* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Kanit', sans-serif;
+}
+a{
+	text-decoration: none
+}
+ul{
+	list-style: none
 }
 body{
-	background: url("../../../Downloads/juli-kosolapova-dWm94DekLBg-unsplash.jpg");
-	background-size: cover;
-	
+	background: linear-gradient(0deg, rgba(0,125,255,1) 0%, rgba(7,0,133,1) 85%);
+	min-height:100vh
 }
-#ngu{
-	width: 100vw;
-	padding: 0 500px
-}
-h1{
-	font-size: 36px;
-	color: #FFC430;
-	padding: 50px 0 0
-}
-#ngu>p{
-	color: darkgrey;
-	padding: 30px 0
-}
-.n{
-	width: 100vw;
+header{
+	width: 100%;
 	display: flex;
-	position: relative;
-/*	top:0;*/
+	justify-content: space-between;
 	align-items: center;
-	margin: 150px auto
-		
-}
-.m{
-	width: 400px;
-	height: 300px;
-	background: rgba(152,0,0,0.65);
 	position: absolute;
-	align-items: center;
-	z-index: 30;
-	padding: 30px 30px;
-	border-radius: 10px;
-	text-align: center;
-	box-shadow: -5px 5px 10px 5px rgba(0,0,0,0.5);
+	top: 0;
+	left: 0;
+	padding: 30px 100px;
+	z-index: 1000	
 }
-.m>span{
-	font-size: 70px;
-	text-align: center;
-	color: white;
-	display: flow-root;
-	padding: 0 0 30px;
+header .logo {
+	color: aliceblue;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+header ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header ul li{
+	margin-left: 15px
+}
+header ul li a{
+	color: aliceblue;
+	padding: 6px 15px;
+}
+header ul li a:hover{
+	background: white;
+	color: #007dff;
+	border-radius: 3px
+}
+section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+section::after{
+	width: 100%;
+	height: 100px;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	z-index: 100;
+	background: linear-gradient(to top, #1c0522,transparent)
+}
+section img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+section img#moon{
+	mix-blend-mode: screen
+}
+section img#fr{
+	z-index: 12
+}
+section #text{
+	font-size: 150px;
+	color: rgba(255,185,35,1.00);
+	text-transform: uppercase;
+	white-space: nowrap;
+	position: absolute;
+	z-index: 10;
 	
 }
-.n>img{
-	height: 600px;
-	position: relative;
-	left: 200px;
+#but{
+	color: #007dff;
+	background: white;
+	padding: 9px 30px;
+	transform: translateY(100px);
+	display: inline-block;
+	border-radius: 30px;
+	z-index: 10;
+	text-transform: uppercase;
 }
-h2{
-	font-size: 36px;
-	color: rgba(222,184,135,1.00)
+.kk:hover #but{
+	transform: translateY(90px);
+	box-shadow: 0px 3px 30px 1px rgba(0,0,0,0.5)
 }
-h3{
-	font-size: 15px;
-	color: rgba(197,197,197,1.00);
-	padding: 0 0 5px 0
+#but:hover{
+	transform: translateY(90px);
+	box-shadow: 0px 3px 30px 1px rgba(0,0,0,0.5)
 }
-.m>p{
-	font-size: 18px;
-	color: white
+.mm{
+	height: 100vh;
+	background: #1c0522
 }
